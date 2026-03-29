@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calorie Burner | Trang chủ</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy card-glass">
+          <span class="pill">Calorie Burner App</span>
+          <h1>Quản lý sức khỏe, bài tập và dinh dưỡng trong một giao diện hiện đại</h1>
+          <p>Project frontend bám sát chủ đề thể hình: đăng ký, đăng nhập, danh sách bài tập, tự tạo lịch tập, tìm bài tập theo nhóm cơ và gợi ý món ăn lành mạnh bằng API miễn phí.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./exercises.html">Khám phá bài tập</a>
+            <a class="btn btn-secondary" href="./routine.html">Tạo lịch tập</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>700+</strong><span>Bài tập từ API</span></div>
+            <div><strong>Free</strong><span>API công khai</span></div>
+            <div><strong>CRUD</strong><span>Lịch tập cá nhân</span></div>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="feature-card">
+            <h3>Workout Explorer</h3>
+            <p>Tìm kiếm bài tập theo tên, nhóm cơ và mức độ.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Routine Builder</h3>
+            <p>Tạo, sửa, xóa lịch tập cá nhân bằng localStorage.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Healthy Meals</h3>
+            <p>Khám phá món ăn và nguyên liệu hỗ trợ ăn uống lành mạnh.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Workout highlights</p>
+            <h2>Bài tập nổi bật</h2>
+          </div>
+          <a class="text-link" href="./exercises.html">Xem tất cả</a>
+        </div>
+        <div id="homeExercisesLoading"></div>
+        <div id="homeExercises" class="exercise-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-block soft-bg">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Nutrition ideas</p>
+            <h2>Bữa ăn gợi ý</h2>
+          </div>
+          <a class="text-link" href="./meals.html">Xem thực đơn</a>
+        </div>
+        <div id="homeMealsLoading"></div>
+        <div id="homeMeals" class="meal-grid"></div>
+      </div>
+    </section>
+  </main>
+  <footer id="siteFooter"></footer>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/pages/home.js"></script>
+</body>
+</html>

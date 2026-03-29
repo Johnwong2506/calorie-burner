@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đã lưu | Calorie Burner</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/saved.css" />
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <main class="page-wrap">
+    <section class="container saved-stack">
+      <div class="section-head"><div><p class="section-kicker">Saved</p><h1>Mục yêu thích</h1></div></div>
+      <section>
+        <h2 class="subhead">Bài tập yêu thích</h2>
+        <div id="savedExercises" class="exercise-grid"></div>
+        <div id="savedExercisesEmpty"></div>
+      </section>
+      <section>
+        <h2 class="subhead">Món ăn yêu thích</h2>
+        <div id="savedMeals" class="meal-grid"></div>
+        <div id="savedMealsEmpty"></div>
+      </section>
+    </section>
+  </main>
+  <footer id="siteFooter"></footer>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/pages/saved.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lịch tập | Calorie Burner</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/routine.css" />
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <main class="page-wrap">
+    <section class="container">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Routine builder</p>
+          <h1>CRUD lịch tập cá nhân</h1>
+        </div>
+      </div>
+      <div class="routine-layout">
+        <section class="card-glass routine-form-card">
+          <h3 id="formTitle">Tạo bài tập cá nhân</h3>
+          <form id="routineForm" class="routine-form">
+            <input type="hidden" id="routineId" />
+            <div class="form-group"><label for="routineTitle">Tên bài tập</label><input id="routineTitle" required placeholder="Ví dụ: Cardio sáng" /></div>
+            <div class="form-group"><label for="routineMuscle">Nhóm cơ</label><input id="routineMuscle" required placeholder="Core, Legs, Full Body..." /></div>
+            <div class="form-group"><label for="routineDuration">Thời lượng (phút)</label><input id="routineDuration" type="number" min="5" required placeholder="30" /></div>
+            <div class="form-group"><label for="routineCalories">Calo dự kiến đốt</label><input id="routineCalories" type="number" min="10" required placeholder="250" /></div>
+            <div class="form-group"><label for="routineNotes">Ghi chú</label><textarea id="routineNotes" rows="4" placeholder="Mô tả ngắn bài tập..."></textarea></div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Lưu bài tập</button>
+              <button class="btn btn-secondary" type="button" id="resetBtn">Làm mới</button>
+            </div>
+          </form>
+        </section>
+
+        <section>
+          <div id="routineList" class="routine-list"></div>
+          <div id="routineEmpty"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer id="siteFooter"></footer>
+  <div id="toast" class="toast"></div>
+  <div id="deleteModal" class="modal hidden">
+    <div class="modal-overlay" data-close="true"></div>
+    <div class="modal-box">
+      <h3>Xóa bài tập?</h3>
+      <p>Bạn có chắc muốn xóa bài tập này khỏi lịch tập cá nhân?</p>
+      <div class="modal-actions">
+        <button id="cancelDeleteBtn" class="btn btn-secondary">Hủy</button>
+        <button id="confirmDeleteBtn" class="btn btn-danger">Xóa</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/pages/routine.js"></script>
+</body>
+</html>

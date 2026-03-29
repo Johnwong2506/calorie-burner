@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài tập | Calorie Burner</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/listing.css" />
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <main class="page-wrap">
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">Exercise library</p>
+        <h1>Danh sách bài tập</h1>
+        <p class="page-description">Tìm kiếm theo tên, lọc theo nhóm cơ và lưu bài tập yêu thích hoặc thêm vào lịch tập cá nhân.</p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="toolbar three-cols">
+        <input id="exerciseSearch" type="text" placeholder="Tìm bài tập theo tên..." />
+        <select id="muscleFilter"><option value="all">Tất cả nhóm cơ</option></select>
+        <select id="sortSelect">
+          <option value="name-asc">Tên A-Z</option>
+          <option value="name-desc">Tên Z-A</option>
+        </select>
+      </div>
+      <div id="exerciseLoading"></div>
+      <div id="exerciseList" class="exercise-grid"></div>
+      <div id="exerciseEmpty"></div>
+    </section>
+  </main>
+  <footer id="siteFooter"></footer>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/pages/exercises.js"></script>
+</body>
+</html>
