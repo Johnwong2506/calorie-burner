@@ -17,3 +17,17 @@
   --radius-lg: 30px;
   --container: 1180px;
 }
+
+body.dark {
+  --bg: #0b1220;
+  --surface: rgba(17,24,39,.78);
+  --surface-solid: #111827;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --primary: #60a5fa;
+  --primary-dark: #3b82f6;
+  --border: #334155;
+  --shadow-sm: 0 12px 30px rgba(0,0,0,.55);
+  --shadow-md: 0 18px 40px rgba(0,0,0,.65);
+}
+
